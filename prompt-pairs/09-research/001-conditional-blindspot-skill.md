@@ -24,3 +24,13 @@
 ## Transferable Principle
 
 把方法写进 skill 前，先回答三个问题：它解决什么失败模式、何时触发、现有 harness 是否已经覆盖。
+
+## Final Prompt
+
+请把这篇文章中的 `blindspot pass`、`one-question interview` 和 `implementation notes` 视为三个候选动作，而不是一套默认在每个 session 全量运行的 workflow。
+
+先判断它们分别解决哪类问题：任务开始前尚未暴露的未知、决策过程中会改变方案的歧义，还是实现阶段的偏离与交接。然后结合当前 repo 的 intake、Wayfinder、plan 和 verification 入口，确认哪些能力已经被覆盖、哪些失败模式仍然缺少稳定承载点。
+
+只有当某个动作会重复出现、无法由现有机制承载，并且能够说明清楚触发条件、跳过条件和产物消费者时，才把它写入 repo-local skill；其余保留为按需 Prompt。
+
+本轮只输出判断依据、触发矩阵和最小 skill 草案，不安装或修改现有 workflow，也不要把整篇文章直接制度化。
