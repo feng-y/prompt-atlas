@@ -25,3 +25,10 @@
 - Registered the Phase 1 source-backed Prompt Foundation Structure.
 - Rewrote all existing Final Prompts into Goal / Context / Boundary / Immediate Task / Done-oriented sections.
 - Updated template, Claude Code entry and Agent lint so future Prompt Pairs use the same structure.
+
+## [2026-07-11] schema | Embed foundation in Final Prompt
+
+- Recorded the user's correction that Foundation fields are an internal review model, not visible Final Prompt headings.
+- Replaced the copy-ready field skeleton with natural Markdown guidance.
+- Updated Claude Code, Agent lint, template, principles, index and all existing Prompt Pair Final Prompts.
+- Preserved the terminal `Final Prompt` contract while removing mechanical `Goal / Context / Boundary / Task / Done` sections from the artifact.
