@@ -23,4 +23,30 @@ Goal loop 至少需要四个合同：当前 slice、单轮动作、可观察 sto
 
 ## Final Prompt
 
-> 以现有 plan 为 source of truth，按 A（config merge）→ B（SessionData registration SOT）→ C（access-layer getter）推进。每个 slice 先声明预期语义与 replay diff，再做最小 patch；build 与 replay 证据不足时只能 RETRY/BLOCK，不能凭代码审查判 PASS。unknown 保持 slice-local；若发现会改变 locked decision、`SessionData::clear()` 生命周期顺序或 remote/global ownership，立即停下升级。不要提前删除 `remote_dict.conf`，也不要顺手重构邻接代码。
+### Goal
+
+在不重做既有迁移 plan 的前提下，让 FeatureTable 统一迁移按可恢复、可停止、可由 replay 判定的 bounded goal loop 推进。
+
+### Current Context
+
+readiness 已判定、关键决策已锁定；迁移分为 A：config merge，B：SessionData registration SOT，C：access-layer getter。当前尚未开工，风险集中在生命周期、ownership 与 replay 语义。
+
+### Design Intent
+
+按已锁定 plan 和最小 slice 推进；用 build 与 replay 作为真实 gate，让 unknown 保持 slice-local。
+
+### Boundary
+
+不要重做 plan，不要跨 A/B/C 提前推进，不要提前删除 remote_dict.conf，不要顺手重构邻接代码；不得改变 SessionData clear 生命周期顺序或 remote/global ownership。
+
+### Immediate Task
+
+仅启动 Slice A。每轮执行 inspect → patch → build → replay → evaluate，并在开始前声明预期 replay diff。
+
+### Expected Output
+
+输出 Slice A 的当前证据、最小 patch、build 与 replay verdict、下一轮路由，以及会改变 locked decision 的 unknown。
+
+### Success / Stop Condition
+
+只有 Slice A 取得 PASS 才能进入 Slice B；证据不足为 RETRY 或 BLOCK。若发现改变 locked decision、生命周期顺序或 ownership 的问题，立即停止并升级人工判断。
