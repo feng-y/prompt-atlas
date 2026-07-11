@@ -13,6 +13,10 @@
 
 - [Prompt Atlas bootstrap conversations](sources/src-2026-07-10-prompt-atlas-bootstrap.md) — v0.1 案例的历史依据；证据状态为 excerpted
 
+## Phase 1 training
+
+- [Prompt Foundation Structure](guides/prompt-foundation-structure.md) — Goal → Context → Boundary → Immediate Task → Done
+
 ## Prompt Pair cases
 
 - [Task Context: Fable repo L3 alignment](prompt-pairs/01-task-context/001-fable-repo-l3-alignment.md)
