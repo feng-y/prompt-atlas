@@ -24,3 +24,13 @@
 ## Transferable Principle
 
 引入通用工具时，Prompt 要说明它在现有链路中的位置、输入合同和停止边界，而不是只描述它“应该更聪明”。
+
+## Final Prompt
+
+DaVinci 当前最大的短板不是执行能力，而是任务入口和 unknown 推进仍过度依赖 Claude Code 的自我感知。我希望用 Wayfinder 增强 discovery，但不替换 Matt 已有的 SPEC、Ticket 和 execution workflow。
+
+请把 Wayfinder 定位为进入 SPEC 之前的 discovery intake。它需要从 repo 的稳定入口获得任务范围、架构边界、当前 unknown、verification gate 和可推进的 current slice，但不负责实现、长期记忆或执行验证。
+
+检查当前 repo 是否已经为这些信息提供 canonical source；缺失部分优先通过 repo-local context route、adapter 或 standing instruction 补齐。Grill 只处理会改变方案的意图和取舍，能够从代码、架构文档或验证结果查明的事实不要交给人回答，也不要求在 discovery 阶段消灭所有 fog。
+
+最终给出最小 binding 方案、Wayfinder 与 repo harness 的职责边界，以及一份足以稳定进入 `/to-spec` 的 handoff 内容。
