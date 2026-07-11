@@ -3,6 +3,8 @@
 **标签**：Research / Unknowns / Skill Design  
 **证据状态**：原始 Prompt 可追溯。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt
 
 > Read this article. Then write yourself a SKILL file from it, so you apply the blindspot pass, the interviews, and the implementation notes on every future session in this repo without me asking.
