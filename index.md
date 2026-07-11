@@ -14,6 +14,7 @@
 - [Prompt Atlas bootstrap conversations](sources/src-2026-07-10-prompt-atlas-bootstrap.md) — v0.1 案例的历史依据；证据状态为 excerpted
 - [Embedded Final Prompt structure decision](sources/src-2026-07-11-embedded-final-prompt-structure.md) — Foundation 用于检查，Final Prompt 自然嵌入结构
 - [Five Prompt style baselines](sources/src-2026-07-11-five-prompt-style-baselines.md) — 五类学习方向与统一自然成稿规则
+- [Sol general work and delegation](sources/src-2026-07-11-sol-general-work-and-delegation.md) — Prompt 之后进入真实工作委托的方向性来源；外部产品与指标仍待核验
 
 ## Phase 1 training
 
@@ -39,6 +40,7 @@
 - [Transferable principles](principles/transferable-principles.md)
 - [Prompt Atlas Map](maps/prompt-atlas.md)
 - [Gaps and collection priorities](summaries/gaps.md)
+- [Delegation Readiness Roadmap](summaries/delegation-readiness-roadmap.md) — planned / not active；保留 Prompt Alignment 主轴，只定义后续引入 Gate
 - [Patterns](patterns/README.md) — empty until repeated validation
 - [Harness knowledge](harness/README.md) — stable operating contracts only
 - [Case studies](case-studies/README.md) — end-to-end evidence chains
