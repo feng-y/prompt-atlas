@@ -3,6 +3,8 @@
 **标签**：Success / Planning / Verification  
 **证据状态**：历史对话摘录，可追溯。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > Prompt 大体上还好，一个问题是每一个 prompt 的输出没有约束，放在哪里，后面的怎么接。
