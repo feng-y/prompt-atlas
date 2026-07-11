@@ -3,6 +3,8 @@
 **标签**：Boundary / Wayfinder / Harness  
 **证据状态**：历史对话可追溯。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > wayfinder 需要调整么？wayfinder 本身就有 grill，怎么适配？我理解只是附加自己的约束把 unknown 路由带入？skill 大同小异，不需要自己构建，prompt 还是需要加强。
