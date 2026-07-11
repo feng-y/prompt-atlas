@@ -3,6 +3,8 @@
 **标签**：Task Context / Architecture / Review  
 **证据状态**：依据多轮讨论重建，原始 Prompt 待补。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > 对我的 harness 的启示借鉴是什么？如何引导或者基于 Fable 构建这层 harness？
