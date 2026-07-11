@@ -13,10 +13,12 @@
 
 - [Prompt Atlas bootstrap conversations](sources/src-2026-07-10-prompt-atlas-bootstrap.md) — v0.1 案例的历史依据；证据状态为 excerpted
 - [Embedded Final Prompt structure decision](sources/src-2026-07-11-embedded-final-prompt-structure.md) — Foundation 用于检查，Final Prompt 自然嵌入结构
+- [Five Prompt style baselines](sources/src-2026-07-11-five-prompt-style-baselines.md) — 五类学习方向与统一自然成稿规则
 
 ## Phase 1 training
 
 - [Prompt Foundation Structure](guides/prompt-foundation-structure.md) — 用 Goal / Context / Boundary / Task / Evidence 检查内容，但不把它们机械写成成稿标题
+- [Five Prompt Style Baselines](guides/five-prompt-style-baselines.md) — Anthropic、Matt、Simon、Lilian、Boris 分别强化什么，以及如何共享同一自然成稿结构
 
 ## Prompt Pair cases
 
