@@ -24,3 +24,13 @@
 ## Transferable Principle
 
 引用外部方法时，先声明它只是 lens，再让模型回到 repo reality；否则“借鉴”很容易变成复制一套新框架。
+
+## Final Prompt
+
+我暂时把 DaVinci 的 repo harness 理解为 `Context Environment / Control Plane / Verification Feedback`。外部文章只作为观察视角，不是要复制的目标架构。
+
+请回到当前 repo，检查 AI 是否能够进入正确上下文、任务是否有稳定的约束与路由、失败是否能通过 replay 或 eval 反馈回来。重点寻找“已有能力存在，但没有成为稳定入口”的地方，而不是重新设计一套 workflow。
+
+允许你质疑这个三层划分；如果它遮蔽了真正的问题，请直接指出。但不要引入新的 framework，也不要停留在通用的优缺点分析。
+
+最终只保留一个当前最高杠杆的改进，说明它依据哪些 repo 事实，以及它会具体改变哪个真实任务的行为。
