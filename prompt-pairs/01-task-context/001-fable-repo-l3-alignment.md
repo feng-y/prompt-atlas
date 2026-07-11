@@ -32,3 +32,13 @@
 ## Transferable Principle
 
 当你不想过度约束模型时，不要删掉方向；改为说明“判断对象 + 允许挑战 + 最小边界 + 最终要做的判断”。
+
+## Final Prompt
+
+DaVinci 当前不是缺少更多文档，而是需要确认现有 repo harness 是否真的能够支撑 L3：让 Fable 在明确需求下自助完成任务，并只进行有限、可控的学习改进。
+
+请从 `CLAUDE.md` 开始，沿它指向的架构边界、workflow 路由和验证入口理解当前机制，判断这些入口与 repo reality 是否一致。把这次工作视为 repo harness alignment，而不是文档整理或知识体系重建。
+
+已有结构能够承载的就继续沿用，只处理会真实影响任务进入、unknown routing 或 verification feedback 的不一致。不要预设具体改造方案，也允许你质疑我对 L3 的理解。
+
+本轮完成时给出当前 L3 支撑能力的判断、对应的 repo 证据、最值得调整的一处，以及为什么现阶段不需要更大的改造。
