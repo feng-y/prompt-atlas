@@ -17,10 +17,10 @@
 
 > 按 replay 的可观察边界拆批，而不是按文件拆。KFC 相关路径单独成 slice；其余共享语义改动合并推进。每个 slice 开始前声明预期 replay diff（no-diff 或可解释 diff），结束时用 build + replay 证据判定 `PASS / RETRY / BLOCK`。
 
-## Expert Lens
-
-> 先用 replay 能否独立归因来决定 slice：若两组改动失败后无法判断是哪一组改变语义，就必须拆开。对每个 slice 固定 baseline、输入集和 expected diff classification；实现后先排除 build/infra failure，再比较 replay evidence。no-diff slice 出现差异时不得继续；expected-diff slice 必须解释每一类变化并确认没有跨出目标语义。
-
 ## Transferable Principle
 
 Verification 不只是末尾测试，它应该反向决定任务如何切片。好的 slice 是失败后仍能归因的最小语义单元。
+
+## Final Prompt
+
+> 先用 replay 能否独立归因来决定 slice：若两组改动失败后无法判断是哪一组改变语义，就必须拆开。对每个 slice 固定 baseline、输入集和 expected diff classification；实现后先排除 build/infra failure，再比较 replay evidence。no-diff slice 出现差异时不得继续；expected-diff slice 必须解释每一类变化并确认没有跨出目标语义。
