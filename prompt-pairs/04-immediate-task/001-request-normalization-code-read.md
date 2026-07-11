@@ -3,6 +3,8 @@
 **标签**：Immediate Task / Refactor / Architecture  
 **证据状态**：历史需求可追溯；字段清单需由 repo 证据生成。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > 这些 feature_fetch_* 代码使用了哪些 request 字段？是否可以在 SessionData 初始化，也就是 reset_ 这部分逻辑时设置这些字段，然后在使用的地方对接口/method 的 request 解耦？已经对 request 做了归一化……
