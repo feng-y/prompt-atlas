@@ -21,10 +21,6 @@
 
 > 请从 `CLAUDE.md`、`ARCHITECTURE.md` 和现有 `docs/workflow` 判断：repo 当前如何支撑 L3（明确需求自助完成 + bounded learning），哪些入口与 repo reality 仍不一致。让 Fable 自行推进最小对齐，不重建知识体系，也不要预设具体改造方案；先给出判断、证据和最值得调整的一处。
 
-## Expert Lens
-
-> 把这次工作视为 **repo harness alignment**，不是文档重写。先 warm up：读取主入口、架构边界、workflow 路由和验证入口，形成你对当前 L3 支撑能力的判断。然后只处理会真实影响任务进入、unknown routing 或 verification feedback 的不一致；已有结构能承载的就沿用。允许质疑我对 L3 的理解，但最终请给出：当前能力判断、关键证据、最小对齐动作，以及为什么现在不需要更大的改造。
-
 ## Why It Is Better
 
 它补的不是步骤，而是 Decision Context：工作性质、观察面、允许挑战的空间、最小变更原则与最终判断都清楚了。
@@ -32,3 +28,7 @@
 ## Transferable Principle
 
 当你不想过度约束模型时，不要删掉方向；改为说明“判断对象 + 允许挑战 + 最小边界 + 最终要做的判断”。
+
+## Final Prompt
+
+> 把这次工作视为 **repo harness alignment**，不是文档重写。先 warm up：读取主入口、架构边界、workflow 路由和验证入口，形成你对当前 L3 支撑能力的判断。然后只处理会真实影响任务进入、unknown routing 或 verification feedback 的不一致；已有结构能承载的就沿用。允许质疑我对 L3 的理解，但最终请给出：当前能力判断、关键证据、最小对齐动作，以及为什么现在不需要更大的改造。
