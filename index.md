@@ -12,10 +12,11 @@
 ## Sources
 
 - [Prompt Atlas bootstrap conversations](sources/src-2026-07-10-prompt-atlas-bootstrap.md) — v0.1 案例的历史依据；证据状态为 excerpted
+- [Embedded Final Prompt structure decision](sources/src-2026-07-11-embedded-final-prompt-structure.md) — Foundation 用于检查，Final Prompt 自然嵌入结构
 
 ## Phase 1 training
 
-- [Prompt Foundation Structure](guides/prompt-foundation-structure.md) — Goal → Context → Boundary → Immediate Task → Done
+- [Prompt Foundation Structure](guides/prompt-foundation-structure.md) — 用 Goal / Context / Boundary / Task / Evidence 检查内容，但不把它们机械写成成稿标题
 
 ## Prompt Pair cases
 

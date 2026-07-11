@@ -23,30 +23,10 @@
 
 ## Final Prompt
 
-### Goal
+我暂时把 DaVinci 的 repo harness 理解为 `Context Environment / Control Plane / Verification Feedback`。外部文章只作为观察视角，不是要复制的目标架构。
 
-判断现有 repo harness 是否足以让 Fable 在真实任务中进入正确上下文、接受正确约束并从验证反馈中修复，而不是为了借鉴外部文章新建一套 workflow。
+请回到当前 repo，检查 AI 是否能够进入正确上下文、任务是否有稳定的约束与路由、失败是否能通过 replay 或 eval 反馈回来。重点寻找“已有能力存在，但没有成为稳定入口”的地方，而不是重新设计一套 workflow。
 
-### Current Context
+允许你质疑这个三层划分；如果它遮蔽了真正的问题，请直接指出。但不要引入新的 framework，也不要停留在通用的优缺点分析。
 
-当前将 harness 暂分为 Context Environment、Control Plane、Verification Feedback；repo 已有入口与验证能力，但其稳定性和缺口尚未被统一判断。本轮是架构审视，不是实现。
-
-### Design Intent
-
-以 repo reality 为准，用三层划分作为观察视角；优先发现已有能力未成为稳定入口的问题。
-
-### Boundary
-
-不要引入新 framework，不要复制文章中的完整架构，不要把 workflow 重写当作默认答案。
-
-### Immediate Task
-
-审视三类 surface：AI 是否进入正确上下文、任务如何被约束和路由、失败如何被 replay 或 eval 反馈。识别当前最高杠杆缺口。
-
-### Expected Output
-
-输出三层能力判断、关键证据、一个最高优先级改进及其会改变的真实任务行为。
-
-### Success / Stop Condition
-
-当能说明最高杠杆改进为何优先于新建 workflow 时完成。若三层划分本身遮蔽关键问题，停止并明确提出需要人工确认的替代划分。
+最终只保留一个当前最高杠杆的改进，说明它依据哪些 repo 事实，以及它会具体改变哪个真实任务的行为。

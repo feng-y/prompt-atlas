@@ -23,30 +23,10 @@
 
 ## Final Prompt
 
-### Goal
+保留现有阶段划分，不需要把流程继续拆得更细。当前真正的问题是每一阶段虽然能产生内容，但产物放在哪里、由谁消费、依据什么进入下一阶段还不够清楚，导致后续 Agent 需要重新理解上游结论。
 
-让流程的阶段输出成为下一阶段可直接消费、可独立验证的 packet，而不是只能服务当前轮思考的一段回复。
+请把每个阶段输出设计成可消费的 packet，明确它应包含的 deliverable、支撑结论的 evidence、当前 verdict、下一位 consumer 和 route reason。只有下一阶段不需要重新解释核心决策、且 verifier 能独立检查证据时，才认为该阶段完成。
 
-### Current Context
+重点保证 plan、implementation 和 replay verdict 能连续衔接。只服务当前轮思考的内容不要固化为长期文档，避免为了完整而增加无消费者的产物。
 
-现有阶段划分已经存在，但各阶段产物、落点、下游消费者和进入下一阶段的证据不够明确，导致后续需要重新解释上游结论。
-
-### Design Intent
-
-保持阶段数量与现有 workflow 不变，只补最小输出合同，使 plan、implementation 与 replay verdict 连续衔接。
-
-### Boundary
-
-不要把每一步拆成细碎表单，不要把只服务当前思考的内容固化为长期文档，不要为了结构而增加新阶段。
-
-### Immediate Task
-
-为当前阶段定义最小 packet：deliverable、evidence、verdict、next consumer 与 route reason。
-
-### Expected Output
-
-给出各阶段产物的落点、下游读取方式、进入下一阶段的必要证据，以及无需固化的临时内容。
-
-### Success / Stop Condition
-
-当下一阶段无需重新猜测上游结论且 verifier 能独立检查证据时完成。若某阶段无法定义独立 consumer 或 evidence，停止并指出该阶段边界需要人工重定。
+最终给出各阶段的最小输出合同、建议落点、消费关系和进入下一阶段的可观察条件。

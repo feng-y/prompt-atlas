@@ -23,30 +23,10 @@
 
 ## Final Prompt
 
-### Goal
+我们已经采用 Matt 的 Wayfinder 和 Grill，不希望 fork、重写或重新创建一套相似能力。当前要解决的是：Wayfinder 发现 unknown 后，能否自然使用 DaVinci repo 已有的知识入口、架构边界和验证能力，而不是继续依赖模型自行感知。
 
-增强 Wayfinder 在本 repo 中发现和路由 unknown 的能力，同时保持它作为通用 discovery shell，而不是 fork 出一套专用工具。
+请把 Wayfinder 保持为通用的 discovery shell，检查 repo 是否已经向它稳定暴露任务入口、架构约束、unknown 的升级路径和可执行的验证证据。缺失部分优先由 repo-owned context、adapter 或 guardrail 承担，不要把 repo knowledge 和 verification 责任塞进 Wayfinder 核心流程。
 
-### Current Context
+Grill 只负责澄清会改变方案的 intent 与取舍，不承担代码事实发现或验证执行。
 
-现有 Matt Wayfinder / Grill 已可用于 discovery；repo 侧尚需确认是否已向它暴露任务入口、架构边界、unknown 升级路径与验证证据。
-
-### Design Intent
-
-将 repo-specific 知识和约束放在 repo harness 的 adapter 或 context route 中，让 Wayfinder 保持通用。
-
-### Boundary
-
-不要 fork 或重写 Wayfinder，不要让 Grill 承担 repo knowledge 或 verification，不要创造平行 workflow。
-
-### Immediate Task
-
-判断缺失的最小约束是什么，并区分应由 repo 提供的 adapter/context 与必须修改 Wayfinder 的真实缺口。
-
-### Expected Output
-
-先给最终 verdict：无需调整、只需附加约束，或必须修改 Wayfinder；再列出必要改动和明确不该做的改动。
-
-### Success / Stop Condition
-
-当 verdict 有对应 repo evidence 且能指出唯一归属层时完成。若缺口涉及 Wayfinder 核心语义而非 repo 适配，停止并请求人工决定是否 fork。
+最后明确判断当前属于无需调整、只需增加 repo-local 约束，还是确实存在必须修改 Wayfinder 的缺口，并给出对应证据和最小改动范围。

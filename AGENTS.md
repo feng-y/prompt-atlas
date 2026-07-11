@@ -29,7 +29,9 @@
 
 ## Prompt Pair final artifact
 
-Phase 1 使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.md)。分析用于学习；页面末尾的 Final Prompt 才是唯一可发送产物。默认必须显式包含 Goal、Current Context、Boundary、Immediate Task、Success / Stop Condition；Design Intent 与 Expected Output 在会改变判断时加入。
+分析部分用于学习；页面末尾的 `Final Prompt` 才是唯一可发送产物。使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.md) 检查 Goal / Why、Decision Context、Control Boundary、Immediate Task 与 Observable Evidence 是否在语义上足够清楚。
+
+这些维度不是默认的成稿标题。Final Prompt 应是自然、连续、可直接复制的 Markdown。只有任务本身需要正式合同、多人交接或逐项返回时，才因为实际使用价值采用标题或列表。
 
 ## Lint
 
@@ -37,7 +39,8 @@ Phase 1 使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.
 
 - source 是否没有 downstream page；
 - Prompt Pair 是否缺 Current Prompt、Minimal Rewrite、证据状态、Outcome 或末尾的 Final Prompt；
-- Phase 1 Final Prompt 是否缺 Goal、Current Context、Boundary、Immediate Task 或 Success / Stop Condition；
+- Final Prompt 是否在内容上缺少目标、当前判断、必要边界、即时任务或可观察证据；
+- Final Prompt 是否机械泄漏 `Goal / Current Context / Boundary / Immediate Task / Success` 等教学栏目；
 - Final Prompt 是否唯一、完整、可直接发送，且没有混入分析或备选方案；
 - principle / pattern 是否缺来源或重复验证；
 - 孤立页、陈旧链接、相互矛盾的综合；
@@ -49,6 +52,7 @@ Phase 1 使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.
 
 - 原始 Prompt 与 source 不得被改写；改写稿另存。
 - Prompt Pair 的学习分析在前；唯一可发送的 `## Final Prompt` 必须是页面最后一节。
+- Foundation 用于检查内容，不用于强制 Final Prompt 的可见段落结构。
 - 使用标准 Markdown 与相对链接；不要加入 Obsidian 专属格式、RAG 或数据库。
 - 改变 schema、索引或原则时，检查其他 Agent 的读取路径。
 - ChatGPT 默认分析与建议；只有用户明确要求才写入。Codex / Claude Code 保留可审阅 Git 变更。

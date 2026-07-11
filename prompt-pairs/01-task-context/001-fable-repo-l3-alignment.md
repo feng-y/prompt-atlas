@@ -31,30 +31,10 @@
 
 ## Final Prompt
 
-### Goal
+DaVinci 当前不是缺少更多文档，而是需要确认现有 repo harness 是否真的能够支撑 L3：让 Fable 在明确需求下自助完成任务，并只进行有限、可控的学习改进。
 
-让 repo 的入口、架构与 workflow 能真实支撑 L3：明确需求可自助推进，并在有限范围内学习改进，而不是依赖 Fable 临场猜测。
+请从 `CLAUDE.md` 开始，沿它指向的架构边界、workflow 路由和验证入口理解当前机制，判断这些入口与 repo reality 是否一致。把这次工作视为 repo harness alignment，而不是文档整理或知识体系重建。
 
-### Current Context
+已有结构能够承载的就继续沿用，只处理会真实影响任务进入、unknown routing 或 verification feedback 的不一致。不要预设具体改造方案，也允许你质疑我对 L3 的理解。
 
-当前已有 CLAUDE.md、ARCHITECTURE.md 与 docs/workflow 等入口，但尚未确认它们是否一致地向 Fable 暴露任务入口、架构边界、unknown routing 与验证反馈。本轮处于判断和最小对齐阶段，不是业务代码实现。
-
-### Design Intent
-
-优先让 Fable 成为 repo-aware 的共同设计者；保留既有知识结构，补齐真正影响 L3 行为的连接点。
-
-### Boundary
-
-不要重建知识体系，不要预设大改方案，不要把文档整理本身当成目标。已有结构能承载的能力应复用。
-
-### Immediate Task
-
-读取主入口、架构边界、workflow 路由与验证入口，判断 repo 当前如何支撑 L3，以及哪一处不一致最值得最小调整。
-
-### Expected Output
-
-给出当前能力判断、对应 repo 证据、一个最小对齐动作，以及暂不需要更大改造的理由。
-
-### Success / Stop Condition
-
-当能够基于证据指出一个真实影响任务进入、unknown routing 或 verification feedback 的缺口，并给出最小动作时完成。若发现会改变 L3 定义或需要重建知识体系，停止并升级人工判断。
+本轮完成时给出当前 L3 支撑能力的判断、对应的 repo 证据、最值得调整的一处，以及为什么现阶段不需要更大的改造。
