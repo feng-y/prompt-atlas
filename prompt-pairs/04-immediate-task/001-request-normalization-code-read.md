@@ -24,3 +24,13 @@
 ## Transferable Principle
 
 重构类 Prompt 先把“改什么”改写成“按什么证据判断能不能改”，就能显著降低机械替换和过早实现。
+
+## Final Prompt
+
+DaVinci 已经对 request 做了部分归一化。这次工作的目标不是把所有旧 request 引用机械替换成 `unify_request`，而是判断哪些字段已经具备稳定的 session ownership，从而让下游 module 与具体接口 request 解耦。
+
+请检查列出的 `feature_fetch_*` modules 实际读取了哪些 request fields，并沿 `SessionData::reset_*` 初始化链路追踪每个字段的原始来源、归一化位置、生命周期和所有 consumer。特别确认它们是否受 tag、streaming 或 item 语义差异影响。
+
+本轮只做 code-read 和迁移判断，不修改代码。只有初始化时机与行为语义都等价时，才判定字段可以迁移到 session-owned canonical data；其余标记为 residual dependency，并说明它是真实业务差异还是尚未收敛的历史耦合。
+
+最终按 `field → source → init point → consumer → migration verdict` 给出证据，并列出仍需保留 raw request 的位置及原因。
