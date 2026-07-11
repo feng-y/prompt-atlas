@@ -3,6 +3,8 @@
 **标签**：Wayfinder / Unknowns / Control Plane  
 **证据状态**：依据既有方案归纳，最终 warmup prompt 原文待补。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > 我就需要 Wayfinder 介入，因为现在主要靠 cc 自我感知，导致控制力过弱，这是最大的短板。Wayfinder 本身就有 Grill，怎么适配？我理解只是附加自己的约束把 unknown 路由带入？
