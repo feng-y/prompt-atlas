@@ -17,10 +17,10 @@
 
 > 请检查列出的 `feature_fetch_*` modules 实际读取的 request fields，并沿 `SessionData::reset_*` 初始化链路追踪这些字段能否成为 session-owned canonical data。当前只做 code-read 和迁移判断，不改代码。输出 `field → source → init point → consumer → migration verdict`，并标出仍需保留 raw request 的语义差异。
 
-## Expert Lens
-
-> 目标不是把所有 request 引用机械替换成 `unify_request`，而是识别哪些信息已经具备稳定的 session ownership。以字段为单位追踪：原始来源、归一化发生点、生命周期、所有 consumer、是否受 tag / streaming / item 语义影响。只有当初始化时机和语义都等价时，才判定可以解耦；其余归类为 residual dependency，并解释它是真实业务差异还是尚未收敛的历史耦合。
-
 ## Transferable Principle
 
 重构类 Prompt 先把“改什么”改写成“按什么证据判断能不能改”，就能显著降低机械替换和过早实现。
+
+## Final Prompt
+
+> 目标不是把所有 request 引用机械替换成 `unify_request`，而是识别哪些信息已经具备稳定的 session ownership。以字段为单位追踪：原始来源、归一化发生点、生命周期、所有 consumer、是否受 tag / streaming / item 语义影响。只有当初始化时机和语义都等价时，才判定可以解耦；其余归类为 residual dependency，并解释它是真实业务差异还是尚未收敛的历史耦合。
