@@ -31,7 +31,7 @@
 - Recorded the user's correction that Foundation fields are an internal review model, not visible Final Prompt headings.
 - Replaced the copy-ready field skeleton with natural Markdown guidance.
 - Updated Claude Code, Agent lint, template, principles, index and all existing Prompt Pair Final Prompts.
-- Preserved the terminal `Final Prompt` contract while removing mechanical `Goal / Context / Boundary / Task / Done` sections from the artifact.
+- Preserved the terminal `Final Prompt` contract while removing mechanical `Goal / Current Context / Boundary / Task / Done` sections from the artifact.
 
 ## [2026-07-11] ingest | Five Prompt style baselines
 
@@ -40,3 +40,10 @@
 - Clarified that the five approaches change information emphasis and control mechanisms, not the visible Final Prompt template.
 - Added natural Final Prompt examples and connected the guide and source to `index.md`.
 - Evidence status: user-specific training synthesis is original; external author attribution still requires future source-backed expansion.
+
+## [2026-07-11] ingest | Harness workflow compatibility cleanup
+
+- Added a real Prompt Pair for the DaVinci Harness `core + workflow` to `core + path` migration cleanup.
+- Classified it under Task Context because the main learning point is changing chronological migration history into a problem-first Decision Context.
+- Kept Architecture, Boundary and Verification as secondary tags.
+- Evidence status: original Prompt and reviewed rewrite are recorded; runtime outcome and smoke/eval verdict remain pending.
