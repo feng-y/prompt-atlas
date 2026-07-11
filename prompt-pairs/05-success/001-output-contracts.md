@@ -23,4 +23,30 @@
 
 ## Final Prompt
 
-> 请把流程中的每个阶段输出视为一个可消费 packet，而不是一次性回复。对每个 packet 明确：`deliverable`、`evidence`、`verdict`、`next consumer` 与 `route reason`。只有当下一阶段无需重新解释上游结论、且 verifier 能独立检查证据时，才算完成。若某个输出只服务当前轮思考，不要固化为长期文档。
+### Goal
+
+让流程的阶段输出成为下一阶段可直接消费、可独立验证的 packet，而不是只能服务当前轮思考的一段回复。
+
+### Current Context
+
+现有阶段划分已经存在，但各阶段产物、落点、下游消费者和进入下一阶段的证据不够明确，导致后续需要重新解释上游结论。
+
+### Design Intent
+
+保持阶段数量与现有 workflow 不变，只补最小输出合同，使 plan、implementation 与 replay verdict 连续衔接。
+
+### Boundary
+
+不要把每一步拆成细碎表单，不要把只服务当前思考的内容固化为长期文档，不要为了结构而增加新阶段。
+
+### Immediate Task
+
+为当前阶段定义最小 packet：deliverable、evidence、verdict、next consumer 与 route reason。
+
+### Expected Output
+
+给出各阶段产物的落点、下游读取方式、进入下一阶段的必要证据，以及无需固化的临时内容。
+
+### Success / Stop Condition
+
+当下一阶段无需重新猜测上游结论且 verifier 能独立检查证据时完成。若某阶段无法定义独立 consumer 或 evidence，停止并指出该阶段边界需要人工重定。
