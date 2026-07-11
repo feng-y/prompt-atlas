@@ -3,6 +3,8 @@
 **标签**：Verification / Slice / Refactor  
 **证据状态**：历史对话可追溯。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > replay 验证点后面和 KFC 相关的分开的改，其他的可以一起改了，使用 replay 验证。
