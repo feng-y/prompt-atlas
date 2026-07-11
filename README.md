@@ -24,11 +24,12 @@
 | Boundary | 不 fork Wayfinder；保留模型判断空间 | 2 个初稿 |
 | Immediate Task | Request 归一化定向 code-read | 1 个初稿 |
 | Research | Blindspot skill 的条件触发 | 1 个初稿 |
+| Success | 阶段输出如何被后续消费 | 1 个初稿 |
 | Wayfinder | unknown routing + verification loop | 1 个初稿 |
 | Loop | FeatureTable A/B/C bounded loop | 1 个初稿 |
 | Verification | 以 replay 可观察边界拆 slice | 1 个初稿 |
 | Review | 先反驳再判断方案 | 1 个初稿 |
-| Background / Success / Architecture / Refactor | 已在现有案例中交叉覆盖 | 待形成独立案例 |
+| Background / Architecture / Refactor | 已在现有案例中交叉覆盖 | 待形成独立案例 |
 
 入口：
 
