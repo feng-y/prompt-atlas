@@ -8,6 +8,10 @@
   
 → [Sources](../sources/README.md)：若它会成为后续判断依据，先建立不可变 source record。
 
+## 我想开始系统训练 Prompt
+
+→ [Prompt Studio training guide](../guides/prompt-studio-training.md)：查看当前短板、五类学习基线、训练阶段与会话复盘方法。
+
 ## 我想学习某一种表达能力
 
 → [Prompt Pair Index](../prompt-pairs/README.md)：按 Task Context、Boundary、Success、Wayfinder、Loop、Verification 等方向阅读。
