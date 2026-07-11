@@ -3,6 +3,8 @@
 **标签**：Loop / Migration / Verification  
 **证据状态**：方案与主要约束可追溯；完整最终 prompt 待回填。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > FeatureTable context table 与 global table 统一的方案已经写好，状态是 readiness 已判定、决策已锁定、尚未开工。给我一个 loop prompt 推进方案。
