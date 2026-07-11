@@ -25,7 +25,7 @@ Prompt Atlas 既是 Prompt Studio，也是一个由 Agent 持续维护的垂直 
 | 页面类型 | 作用 |
 | --- | --- |
 | [Sources](sources/README.md) | 不可改写的事实依据、历史摘录与外部材料 |
-| [Prompt Pairs](prompt-pairs/README.md) | 原始表达 → 分析 → 改写 → 原则的案例页 |
+| [Prompt Pairs](prompt-pairs/README.md) | 原始表达 → 分析 → 最小改写 → 原则 → 可直接发送的 Final Prompt |
 | [Principles](principles/transferable-principles.md) | 重复验证后的可迁移判断 |
 | [Patterns](patterns/README.md) | 多个案例反复出现的结构或触发模式 |
 | [Case Studies](case-studies/README.md) | Prompt 到真实结果的端到端证据 |
