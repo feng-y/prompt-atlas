@@ -23,4 +23,30 @@
 
 ## Final Prompt
 
-> 将 Wayfinder 定位为 L3 的 spec-discovery intake：它负责把 intent 映射为 `scope / branches / unknowns / verification / current slice`，但不负责实现和长期记忆。请检查现有 repo 是否已经为这五项提供 canonical source；缺失时补 adapter 或 context route。Grill 只在会改变方案的问题上介入。最终产物应足以进入 `/to-spec`，同时保留 fog，不要求在 discovery 阶段消灭所有 unknown。
+### Goal
+
+降低任务入口依赖模型自我感知的风险，让 Wayfinder 在形成 SPEC 前能读取 repo 的 canonical context 并显式路由 unknown。
+
+### Current Context
+
+现有 Matt workflow 已包含 Wayfinder / Grill；当前短板是 discovery 阶段未必能稳定得到任务入口、架构边界、unknown 升级规则和 verification gate。
+
+### Design Intent
+
+将 Wayfinder 定位为 L3 的 spec-discovery intake：它建立 scope、branches、unknowns、verification 与 current slice，但不承担实现或长期记忆。
+
+### Boundary
+
+不要替换现有 Matt workflow，不要让 discovery 阶段消灭所有 fog，不要把 repo-owned knowledge 写进 Wayfinder 核心。
+
+### Immediate Task
+
+检查上述五类信息是否已有 canonical source；缺失时设计最小 adapter 或 context route，并说明 Grill 的最小介入点。
+
+### Expected Output
+
+给出最小适配方式、信息归属、最终可进入 to-spec 的 packet，以及仍应保留的 fog。
+
+### Success / Stop Condition
+
+当 Wayfinder 的输出能稳定进入 SPEC 且每类信息有归属时完成。若必须改变 Wayfinder 核心流程，停止并升级是否 fork 的人工决策。
