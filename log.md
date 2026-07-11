@@ -47,3 +47,11 @@
 - Classified it under Task Context because the main learning point is changing chronological migration history into a problem-first Decision Context.
 - Kept Architecture, Boundary and Verification as secondary tags.
 - Evidence status: original Prompt and reviewed rewrite are recorded; runtime outcome and smoke/eval verdict remain pending.
+
+## [2026-07-11] ingest | Sol general work and Delegation Readiness
+
+- Registered the user-provided `5.6 Sol is underhyped for general work` excerpt as a source record.
+- Added a planned / not active Delegation Readiness roadmap that distinguishes Prompt Alignment from later execution readiness.
+- Preserved Prompt Alignment, the existing Foundation and Final Prompt rules as the current training axis.
+- Defined future readiness dimensions and an evidence gate; no principle, pattern or Harness contract was promoted.
+- Evidence status: article excerpt is user-provided; external product claims, metrics and public provenance remain to be verified.
