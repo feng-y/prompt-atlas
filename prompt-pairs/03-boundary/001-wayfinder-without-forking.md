@@ -23,4 +23,30 @@
 
 ## Final Prompt
 
-> 把 Wayfinder 保持为通用的 discovery shell。请检查当前 repo 是否已经向它暴露了四类信息：任务入口、架构边界、unknown 的升级路径、可执行的验证证据。若缺失，优先补 repo-owned adapter/context，而不是改变 Wayfinder 的核心流程。Grill 只负责澄清 intent；不要让它承担 repo knowledge 或 verification。最后判断：无需调整、只需附加约束，还是存在必须修改 Wayfinder 的真实缺口。
+### Goal
+
+增强 Wayfinder 在本 repo 中发现和路由 unknown 的能力，同时保持它作为通用 discovery shell，而不是 fork 出一套专用工具。
+
+### Current Context
+
+现有 Matt Wayfinder / Grill 已可用于 discovery；repo 侧尚需确认是否已向它暴露任务入口、架构边界、unknown 升级路径与验证证据。
+
+### Design Intent
+
+将 repo-specific 知识和约束放在 repo harness 的 adapter 或 context route 中，让 Wayfinder 保持通用。
+
+### Boundary
+
+不要 fork 或重写 Wayfinder，不要让 Grill 承担 repo knowledge 或 verification，不要创造平行 workflow。
+
+### Immediate Task
+
+判断缺失的最小约束是什么，并区分应由 repo 提供的 adapter/context 与必须修改 Wayfinder 的真实缺口。
+
+### Expected Output
+
+先给最终 verdict：无需调整、只需附加约束，或必须修改 Wayfinder；再列出必要改动和明确不该做的改动。
+
+### Success / Stop Condition
+
+当 verdict 有对应 repo evidence 且能指出唯一归属层时完成。若缺口涉及 Wayfinder 核心语义而非 repo 适配，停止并请求人工决定是否 fork。
