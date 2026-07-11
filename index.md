@@ -24,6 +24,7 @@
 
 - [Task Context: Fable repo L3 alignment](prompt-pairs/01-task-context/001-fable-repo-l3-alignment.md)
 - [Task Context: Harness three-layer audit](prompt-pairs/01-task-context/002-harness-three-layer-audit.md)
+- [Task Context: Harness workflow compatibility cleanup](prompt-pairs/01-task-context/003-harness-workflow-compatibility-cleanup.md)
 - [Boundary: Wayfinder without forking](prompt-pairs/03-boundary/001-wayfinder-without-forking.md)
 - [Immediate Task: Request normalization](prompt-pairs/04-immediate-task/001-request-normalization-code-read.md)
 - [Success: Output contracts](prompt-pairs/05-success/001-output-contracts.md)
