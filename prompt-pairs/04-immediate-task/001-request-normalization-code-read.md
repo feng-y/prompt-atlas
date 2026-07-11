@@ -23,30 +23,10 @@
 
 ## Final Prompt
 
-### Goal
+DaVinci 已经对 request 做了部分归一化。这次工作的目标不是把所有旧 request 引用机械替换成 `unify_request`，而是判断哪些字段已经具备稳定的 session ownership，从而让下游 module 与具体接口 request 解耦。
 
-判断哪些 request 信息已经具备稳定的 session ownership，从而能安全地从原始 request 解耦，而不是机械替换所有 request 引用。
+请检查列出的 `feature_fetch_*` modules 实际读取了哪些 request fields，并沿 `SessionData::reset_*` 初始化链路追踪每个字段的原始来源、归一化位置、生命周期和所有 consumer。特别确认它们是否受 tag、streaming 或 item 语义差异影响。
 
-### Current Context
+本轮只做 code-read 和迁移判断，不修改代码。只有初始化时机与行为语义都等价时，才判定字段可以迁移到 session-owned canonical data；其余标记为 residual dependency，并说明它是真实业务差异还是尚未收敛的历史耦合。
 
-request 已完成归一化；多个 feature_fetch 模块仍读取 request 字段。需要沿 SessionData 初始化与消费链路确认字段来源、生命周期和语义差异。本轮只做 code-read 和迁移判断。
-
-### Design Intent
-
-优先建立字段级语义等价与 ownership 证据；只在初始化时机和语义都等价时收敛到 session-owned canonical data。
-
-### Boundary
-
-不要改代码，不要把 raw request 的真实业务差异误判为历史耦合，不要仅根据同名字段判断可替换。
-
-### Immediate Task
-
-逐字段追踪 feature_fetch 模块读取的 request fields：来源、归一化点、SessionData 初始化点、consumer 与残留语义。
-
-### Expected Output
-
-输出 field → source → init point → consumer → migration verdict；对不能迁移的字段说明它是业务差异还是尚未收敛的耦合。
-
-### Success / Stop Condition
-
-当每个被检查字段都有可审计 verdict 时完成。若字段生命周期或 tag / streaming / item 语义无法由代码证据确定，停止并列为需补充的 unknown。
+最终按 `field → source → init point → consumer → migration verdict` 给出证据，并列出仍需保留 raw request 的位置及原因。
