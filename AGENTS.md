@@ -27,12 +27,17 @@
 
 先从 `index.md` 定位，再读相关 source 与 wiki 页面。输出时区分：source fact、current synthesis、inference、open question。查询结果只有在用户明确要求沉淀时才写回。
 
+## Prompt Pair final artifact
+
+Phase 1 使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.md)。分析用于学习；页面末尾的 Final Prompt 才是唯一可发送产物。默认必须显式包含 Goal、Current Context、Boundary、Immediate Task、Success / Stop Condition；Design Intent 与 Expected Output 在会改变判断时加入。
+
 ## Lint
 
 按用户要求或来源累计后运行。检查：
 
 - source 是否没有 downstream page；
 - Prompt Pair 是否缺 Current Prompt、Minimal Rewrite、证据状态、Outcome 或末尾的 Final Prompt；
+- Phase 1 Final Prompt 是否缺 Goal、Current Context、Boundary、Immediate Task 或 Success / Stop Condition；
 - Final Prompt 是否唯一、完整、可直接发送，且没有混入分析或备选方案；
 - principle / pattern 是否缺来源或重复验证；
 - 孤立页、陈旧链接、相互矛盾的综合；
