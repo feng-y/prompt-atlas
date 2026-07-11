@@ -19,3 +19,9 @@
 - Standardized all existing Prompt Pair pages so `Final Prompt` is the last section.
 - Added Claude Code and cross-agent enforcement: analysis teaches; the terminal section is the only copy-ready prompt.
 - Extended lint to flag missing, non-terminal, non-unique or analysis-contaminated Final Prompts.
+
+## [2026-07-10] schema | Prompt foundation structure
+
+- Registered the Phase 1 source-backed Prompt Foundation Structure.
+- Rewrote all existing Final Prompts into Goal / Context / Boundary / Immediate Task / Done-oriented sections.
+- Updated template, Claude Code entry and Agent lint so future Prompt Pairs use the same structure.
