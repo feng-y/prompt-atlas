@@ -36,4 +36,27 @@
 
 ## Final Prompt
 
-> 页面最后必须是唯一、完整、可直接发送给目标模型的 Prompt。它综合分析中的有效信息，但不包含分析过程、比较说明或多个备选版本。
+Final Prompt 必须是页面最后一节，也是唯一可直接发送给目标模型的版本。Phase 1 默认使用以下强结构：
+
+### Goal
+[真正想解决的问题、为什么现在处理、希望产生的变化]
+
+### Current Context
+[已有状态、缺口、当前阶段、判断必须知道的事实]
+
+### Design Intent
+[多个合理方案之间应偏向什么；没有额外取舍时可简短说明]
+
+### Boundary
+[不能改变什么、必须保留什么、优先复用什么、明确不做什么]
+
+### Immediate Task
+[这一轮唯一需要完成的问题或切片；哪些事情留到后续]
+
+### Expected Output
+[需要的判断、依据、方案、缺失信息或可执行产物]
+
+### Success / Stop Condition
+[必须回答的问题、必要证据、何时继续、何时停止并升级人工决策]
+
+Phase 1 最少不得省略：Goal、Current Context、Boundary、Immediate Task、Success / Stop Condition。不得混入分析、比较说明或多个备选版本。
