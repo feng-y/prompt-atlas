@@ -11,6 +11,7 @@ Prompt Atlas 既是 Prompt Studio，也是一个由 Agent 持续维护的垂直 
 - [Operations log](log.md) — 最近的 ingest、promote、lint
 - [Agent Guide](AGENTS.md) — 跨 ChatGPT / Codex / Claude Code 的操作合同
 - [Prompt Atlas Map](maps/prompt-atlas.md) — 按当前目标导航
+- [Prompt Foundation Structure](guides/prompt-foundation-structure.md) — 第一阶段的固定训练骨架
 
 ## 训练目标
 
