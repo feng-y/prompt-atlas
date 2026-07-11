@@ -3,6 +3,8 @@
 **标签**：Task Context / Architecture / Boundary  
 **证据状态**：历史对话摘录，可追溯；最终版本需回填原会话完整文本。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt（摘录）
 
 > 现在要做的是让 fable 进行 repo 的一致性对齐，从 CLAUDE.md 以及 ARCHITECTURE.md 如何进入渐进式感知 L3。你不要想着大改现有的知识体系，引导式 prompt，让 fable 自己处理。至少要说明 harness 会 L3 的适配，引导也要有导向，但不要给 Fable 设置非常具体的目标。
