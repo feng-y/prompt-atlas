@@ -23,4 +23,30 @@
 
 ## Final Prompt
 
-> 先把外部文章当作观察视角，而不是目标架构。用它检查当前 repo 的三类 surface：AI 能否进入正确上下文、任务如何被约束和路由、失败如何被 replay/eval 反馈回来。重点找“已有能力没有成为稳定入口”的地方，而不是重新发明 workflow。若三层划分遮蔽了关键问题，请直接挑战；最终只保留一个当前最高杠杆改进，并说明它将改变哪个真实任务的行为。
+### Goal
+
+判断现有 repo harness 是否足以让 Fable 在真实任务中进入正确上下文、接受正确约束并从验证反馈中修复，而不是为了借鉴外部文章新建一套 workflow。
+
+### Current Context
+
+当前将 harness 暂分为 Context Environment、Control Plane、Verification Feedback；repo 已有入口与验证能力，但其稳定性和缺口尚未被统一判断。本轮是架构审视，不是实现。
+
+### Design Intent
+
+以 repo reality 为准，用三层划分作为观察视角；优先发现已有能力未成为稳定入口的问题。
+
+### Boundary
+
+不要引入新 framework，不要复制文章中的完整架构，不要把 workflow 重写当作默认答案。
+
+### Immediate Task
+
+审视三类 surface：AI 是否进入正确上下文、任务如何被约束和路由、失败如何被 replay 或 eval 反馈。识别当前最高杠杆缺口。
+
+### Expected Output
+
+输出三层能力判断、关键证据、一个最高优先级改进及其会改变的真实任务行为。
+
+### Success / Stop Condition
+
+当能说明最高杠杆改进为何优先于新建 workflow 时完成。若三层划分本身遮蔽关键问题，停止并明确提出需要人工确认的替代划分。
