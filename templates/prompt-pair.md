@@ -30,6 +30,12 @@
 
 一句可迁移原则。
 
+## Final Prompt
+
+放入唯一一份可直接复制发送的完整 Prompt。
+
+不要在成稿中机械使用 `Goal`、`Decision Context`、`Boundary`、`Immediate Task`、`Evidence` 等教学标题。它们是 review 时的检查维度，应自然嵌入 Markdown 段落。只有真正需要模型逐项执行或逐项返回的内容才使用列表。
+
 ## Outcome（执行后补）
 
 - 实际发送版本：
