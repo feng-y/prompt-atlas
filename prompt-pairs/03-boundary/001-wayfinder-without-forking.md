@@ -24,3 +24,13 @@
 ## Transferable Principle
 
 表达“不要改工具”时，同时说明扩展点归谁所有。单纯禁止修改会让模型失去替代路径。
+
+## Final Prompt
+
+我们已经采用 Matt 的 Wayfinder 和 Grill，不希望 fork、重写或重新创建一套相似能力。当前要解决的是：Wayfinder 发现 unknown 后，能否自然使用 DaVinci repo 已有的知识入口、架构边界和验证能力，而不是继续依赖模型自行感知。
+
+请把 Wayfinder 保持为通用的 discovery shell，检查 repo 是否已经向它稳定暴露任务入口、架构约束、unknown 的升级路径和可执行的验证证据。缺失部分优先由 repo-owned context、adapter 或 guardrail 承担，不要把 repo knowledge 和 verification 责任塞进 Wayfinder 核心流程。
+
+Grill 只负责澄清会改变方案的 intent 与取舍，不承担代码事实发现或验证执行。
+
+最后明确判断当前属于无需调整、只需增加 repo-local 约束，还是确实存在必须修改 Wayfinder 的缺口，并给出对应证据和最小改动范围。
