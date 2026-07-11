@@ -13,3 +13,9 @@
 - Registered the v0.1 historical evidence range as a source record.
 - Added source discipline, content index, append-only log and agent ingest/query/lint workflow.
 - Result: future inputs can be compiled into the wiki instead of remaining isolated chat artifacts.
+
+## [2026-07-10] schema | Terminal Final Prompt
+
+- Standardized all existing Prompt Pair pages so `Final Prompt` is the last section.
+- Added Claude Code and cross-agent enforcement: analysis teaches; the terminal section is the only copy-ready prompt.
+- Extended lint to flag missing, non-terminal, non-unique or analysis-contaminated Final Prompts.
