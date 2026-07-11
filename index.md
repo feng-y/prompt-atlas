@@ -15,6 +15,7 @@
 - [Embedded Final Prompt structure decision](sources/src-2026-07-11-embedded-final-prompt-structure.md) — Foundation 用于检查，Final Prompt 自然嵌入结构
 - [Five Prompt style baselines](sources/src-2026-07-11-five-prompt-style-baselines.md) — 五类学习方向与统一自然成稿规则
 - [Sol general work and delegation](sources/src-2026-07-11-sol-general-work-and-delegation.md) — Prompt 之后进入真实工作委托的方向性来源；外部产品与指标仍待核验
+- [Fable navigation, repair and value validation](sources/src-2026-07-11-fable-navigation-repair-validation.md) — 用真实业务目标探测 repo 导航、修复高价值 Harness 缺口并验证正负价值
 
 ## Phase 1 training
 
@@ -34,7 +35,10 @@
 - [Research: Conditional blindspot skill](prompt-pairs/09-research/001-conditional-blindspot-skill.md)
 - [Wayfinder: Unknown routing adapter](prompt-pairs/10-wayfinder/001-unknown-routing-adapter.md)
 - [Loop: FeatureTable bounded loop](prompt-pairs/11-loop/001-featuretable-bounded-loop.md)
+- [Loop: Single-target navigation and high-value repair](prompt-pairs/11-loop/002-single-target-navigation-repair.md)
+- [Loop: Business target navigation queue](prompt-pairs/11-loop/003-business-target-navigation-queue.md)
 - [Verification: Replay-observable slices](prompt-pairs/12-verification/001-replay-observable-slices.md)
+- [Verification: Harness change value and negative-regression validation](prompt-pairs/12-verification/002-harness-change-value-validation.md)
 
 ## Compiled knowledge
 
