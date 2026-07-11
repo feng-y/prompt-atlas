@@ -63,3 +63,11 @@
 - Preserved Harness and Verification as secondary tags.
 - Did not promote a new principle yet; the case records a candidate rule that should be validated across more real prompts.
 - Evidence status: original expression and reviewed Final Prompt are recorded; runtime outcome and smoke/eval verdict remain pending.
+
+## [2026-07-11] ingest | Fable navigation repair and value validation
+
+- Registered the user-provided progression from single-target repo navigation probe, to high-value Harness repair, to queue-based multi-target exploration and holdout validation.
+- Added two Loop Prompt Pairs and one Verification Prompt Pair.
+- Kept the business navigation file as a dynamic target queue rather than a stable taxonomy or architecture source of truth.
+- Added explicit retain / narrow / rollback logic and negative-value checks for Harness changes.
+- Did not promote a new principle or Harness contract; runtime outcomes and cross-target evidence remain pending.
