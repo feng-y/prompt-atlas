@@ -39,6 +39,15 @@
 - [Prompt Pair 模板](templates/prompt-pair.md)
 - [新增案例入口](inbox/README.md)
 
+## Knowledge Base
+
+Prompt Atlas 现已可作为 Git-first 的 Obsidian 风格知识库使用：GitHub 是唯一真源，Obsidian 直接打开仓库，ChatGPT、Codex 与 Claude Code 共用同一套路由与提升规则。
+
+- [Knowledge Base Contract](KNOWLEDGE_BASE.md)
+- [Prompt Atlas Map](maps/prompt-atlas.md)
+- [Cross-agent Guide](AGENTS.md)
+- [Claude Code Entry](CLAUDE.md)
+
 ## 使用方式
 
 1. 把准备发送给 ChatGPT、Codex、Claude Code 或 Fable 的真实 Prompt 放入 `inbox/`。
