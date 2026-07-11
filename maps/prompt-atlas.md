@@ -20,6 +20,10 @@
 
 → [Transferable Principles](../principles/transferable-principles.md)：只有反复验证后的规律才进入原则或模式层。
 
+## 我想了解后续扩展方向
+
+→ [Delegation Readiness Roadmap](../summaries/delegation-readiness-roadmap.md)：当前只作为 planned / not active 的后续计划；Prompt Alignment 仍是训练主轴。
+
 ## 我需要让 AI 维护 wiki
 
 → [Agent Guide](../AGENTS.md)：按 ingest / query / lint 处理，不把会话直接变成永久知识。
