@@ -23,30 +23,10 @@
 
 ## Final Prompt
 
-### Goal
+请把这篇文章中的 `blindspot pass`、`one-question interview` 和 `implementation notes` 视为三个候选动作，而不是一套默认在每个 session 全量运行的 workflow。
 
-把 blindspot pass、one-question interview 与 implementation notes 变成按任务条件触发的能力，而不是每个会话都强制执行的固定流程。
+先判断它们分别解决哪类问题：任务开始前尚未暴露的未知、决策过程中会改变方案的歧义，还是实现阶段的偏离与交接。然后结合当前 repo 的 intake、Wayfinder、plan 和 verification 入口，确认哪些能力已经被覆盖、哪些失败模式仍然缺少稳定承载点。
 
-### Current Context
+只有当某个动作会重复出现、无法由现有机制承载，并且能够说明清楚触发条件、跳过条件和产物消费者时，才把它写入 repo-local skill；其余保留为按需 Prompt。
 
-文章提供了三种有价值的动作；repo 已有 intake、Wayfinder、plan 与 verification 入口，尚未确认哪些动作已被覆盖、哪些是真实缺口。本轮是方法与触发策略设计。
-
-### Design Intent
-
-只固化重复出现且无法由现有 harness 承载的动作；将其余动作保留为按需 Prompt，避免知识和流程膨胀。
-
-### Boundary
-
-不要把整篇文章制度化，不要默认每个会话执行所有动作，不要新增平行 workflow。
-
-### Immediate Task
-
-分别判断三种动作解决哪类 unknown、适用什么任务条件、何时跳过、产物应落在哪里，并检查现有 repo 是否已覆盖。
-
-### Expected Output
-
-输出触发矩阵、已有覆盖与真实缺口、一个最小 repo-local skill 草案，以及不应固化的动作。
-
-### Success / Stop Condition
-
-当每个动作都有明确触发与跳过条件、且最小 skill 不重复现有机制时完成。若触发策略会改变现有 workflow 所有权，停止并请求人工决策。
+本轮只输出判断依据、触发矩阵和最小 skill 草案，不安装或修改现有 workflow，也不要把整篇文章直接制度化。
