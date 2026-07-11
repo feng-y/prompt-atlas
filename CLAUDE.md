@@ -11,13 +11,18 @@ Prompt Atlas 的运行规则由 [AGENTS.md](AGENTS.md) 统一定义。
 
 ## Prompt Pair delivery rule
 
-当创建或更新 `prompt-pairs/` 中的案例时，使用 [Prompt Pair 模板](templates/prompt-pair.md)。
+当创建或更新 `prompt-pairs/` 中的案例时，使用 [Prompt Pair 模板](templates/prompt-pair.md) 与 [Prompt Foundation Structure](guides/prompt-foundation-structure.md)。
 
-页面前半部分用于学习：Current Prompt、Problem Analysis、Minimal Rewrite、Why It Is Better、Transferable Principle 与 Outcome。页面最后必须是 `## Final Prompt`：
+第一阶段的训练目标不是写得高级，而是先让模型进入正确的问题空间。Final Prompt 必须位于页面末尾，并默认显式包含：
 
-- 它是唯一完整、可直接发送给目标模型的版本；
-- 必须综合分析中的有效信息；
-- 不包含分析过程、解释、多个候选版本或“见上文”式引用；
-- 不得停在 Minimal Rewrite 或中间分析。
+- Goal
+- Current Context
+- Boundary
+- Immediate Task
+- Success / Stop Condition
+
+Design Intent 与 Expected Output 在会改变方案取舍或后续消费时加入。
+
+Final Prompt 必须是唯一完整、可直接发送的版本：综合分析中有效信息，但不包含分析过程、解释、多个候选版本或“见上文”式引用。不得停在 Minimal Rewrite 或中间分析。
 
 本仓库训练 Prompt 表达并沉淀经过验证的知识；不要把会话过程全部永久记忆化。
