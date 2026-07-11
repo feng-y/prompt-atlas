@@ -23,4 +23,30 @@
 
 ## Final Prompt
 
-> 把文章当作候选 moves，而不是固定 workflow。先映射三个动作分别解决哪类 unknown：任务前的未知、决策中的歧义、实现中的偏离。再从 repo 的现有 intake、Wayfinder、plan 和 verification 入口判断谁已覆盖、谁仍缺失。只把重复出现且无法由现有机制承载的动作写入 skill；其余保留为按需 prompt。最终给出触发矩阵与一个最小 skill，而不是把整篇文章制度化。
+### Goal
+
+把 blindspot pass、one-question interview 与 implementation notes 变成按任务条件触发的能力，而不是每个会话都强制执行的固定流程。
+
+### Current Context
+
+文章提供了三种有价值的动作；repo 已有 intake、Wayfinder、plan 与 verification 入口，尚未确认哪些动作已被覆盖、哪些是真实缺口。本轮是方法与触发策略设计。
+
+### Design Intent
+
+只固化重复出现且无法由现有 harness 承载的动作；将其余动作保留为按需 Prompt，避免知识和流程膨胀。
+
+### Boundary
+
+不要把整篇文章制度化，不要默认每个会话执行所有动作，不要新增平行 workflow。
+
+### Immediate Task
+
+分别判断三种动作解决哪类 unknown、适用什么任务条件、何时跳过、产物应落在哪里，并检查现有 repo 是否已覆盖。
+
+### Expected Output
+
+输出触发矩阵、已有覆盖与真实缺口、一个最小 repo-local skill 草案，以及不应固化的动作。
+
+### Success / Stop Condition
+
+当每个动作都有明确触发与跳过条件、且最小 skill 不重复现有机制时完成。若触发策略会改变现有 workflow 所有权，停止并请求人工决策。
