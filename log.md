@@ -55,3 +55,11 @@
 - Preserved Prompt Alignment, the existing Foundation and Final Prompt rules as the current training axis.
 - Defined future readiness dimensions and an evidence gate; no principle, pattern or Harness contract was promoted.
 - Evidence status: article excerpt is user-provided; external product claims, metrics and public provenance remain to be verified.
+
+## [2026-07-11] ingest | Iteration Reason vs History
+
+- Added a Prompt Pair for the Harness replay target selection gap discovered during Fable analysis.
+- Classified it under Task Context because the primary learning point is Decision Hierarchy: starting from why the iteration exists instead of from history, agent diagnosis or a negative boundary.
+- Preserved Harness and Verification as secondary tags.
+- Did not promote a new principle yet; the case records a candidate rule that should be validated across more real prompts.
+- Evidence status: original expression and reviewed Final Prompt are recorded; runtime outcome and smoke/eval verdict remain pending.
