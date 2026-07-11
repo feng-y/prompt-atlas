@@ -24,3 +24,13 @@
 ## Transferable Principle
 
 Goal loop 至少需要四个合同：当前 slice、单轮动作、可观察 stop condition、改变决策时的 escalation rule。
+
+## Final Prompt
+
+FeatureTable context table 与 global table 的迁移方案已经完成 readiness 判断，核心决策也已经锁定。请把现有 plan 作为 source of truth，不重新规划，也不要扩大到邻接重构。
+
+按 A（config merge）→ B（`SessionData` registration SOT）→ C（access-layer getter）的顺序推进，但当前只启动 Slice A。每个 slice 开始前先确认预期语义和 replay diff，然后循环执行 `inspect → patch → build → replay → evaluate`。只有 build 与 replay 证据都支持 PASS 时，才进入下一 slice；证据不足只能 RETRY 或 BLOCK，不能凭代码审查宣布完成。
+
+Unknown 默认保持在当前 slice 内解决。只有当它会改变已经锁定的决策、`SessionData::clear()` 生命周期顺序、remote/global ownership 或既定 verification strategy 时，才停止并升级给我。
+
+不要提前删除 `remote_dict.conf`，也不要顺手修改不属于当前 slice 的代码。每轮报告实际 patch、build/replay 结果和当前 verdict；全部 slice 通过后再给出最终完成判断。
