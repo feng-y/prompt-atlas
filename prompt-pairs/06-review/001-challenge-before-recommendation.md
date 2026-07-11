@@ -3,6 +3,8 @@
 **标签**：Review / Decision Context  
 **证据状态**：由多次“评估下我的方案 / 质疑这个”对话归纳。
 
+**来源**：[Prompt Atlas bootstrap conversations](../../sources/src-2026-07-10-prompt-atlas-bootstrap.md)
+
 ## Current Prompt
 
 > 评估下我的方案。质疑这个。
