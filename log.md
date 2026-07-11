@@ -32,3 +32,11 @@
 - Replaced the copy-ready field skeleton with natural Markdown guidance.
 - Updated Claude Code, Agent lint, template, principles, index and all existing Prompt Pair Final Prompts.
 - Preserved the terminal `Final Prompt` contract while removing mechanical `Goal / Context / Boundary / Task / Done` sections from the artifact.
+
+## [2026-07-11] ingest | Five Prompt style baselines
+
+- Registered the user-defined learning sequence for Anthropic / Alex Albert, Matt Pocock, Simon Willison, Lilian Weng and Boris Cherny.
+- Added a guide that maps each baseline to the part of the shared Foundation it strengthens.
+- Clarified that the five approaches change information emphasis and control mechanisms, not the visible Final Prompt template.
+- Added natural Final Prompt examples and connected the guide and source to `index.md`.
+- Evidence status: user-specific training synthesis is original; external author attribution still requires future source-backed expansion.
