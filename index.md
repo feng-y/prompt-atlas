@@ -12,6 +12,7 @@
 ## Sources
 
 - [Prompt Atlas bootstrap conversations](sources/src-2026-07-10-prompt-atlas-bootstrap.md) — v0.1 案例的历史依据；证据状态为 excerpted
+- [Prompt Studio training session](sources/src-2026-07-11-prompt-atlas-training-session.md) — 当前训练目标、短板、方法与五类参考基线
 
 ## Prompt Pair cases
 
@@ -25,6 +26,10 @@
 - [Wayfinder: Unknown routing adapter](prompt-pairs/10-wayfinder/001-unknown-routing-adapter.md)
 - [Loop: FeatureTable bounded loop](prompt-pairs/11-loop/001-featuretable-bounded-loop.md)
 - [Verification: Replay-observable slices](prompt-pairs/12-verification/001-replay-observable-slices.md)
+
+## Training guides
+
+- [Prompt Studio training guide](guides/prompt-studio-training.md) — 个人短板、五类学习基线、训练阶段与会话复盘 Prompt
 
 ## Compiled knowledge
 
