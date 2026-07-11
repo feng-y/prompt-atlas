@@ -1,4 +1,4 @@
-# 可迁移原则 v0.1
+# 可迁移原则 v0.2
 
 这些原则来自现有 Prompt Pair 的共同模式。它们不是必须套用的模板，而是写完 Prompt 后用于自检的观察角度。
 
@@ -41,3 +41,7 @@
 ## 10. 优先 Minimal Rewrite
 
 训练目标不是让每个 Prompt 变长，而是找到最值得补的一处。Expert Prompt 用来展示上限，Minimal Rewrite 才是日常表达能力的主要训练材料。
+
+## 11. 组织思考，但隐藏模板
+
+`Goal / Decision Context / Control Boundary / Immediate Task / Observable Evidence` 用于检查 Prompt 是否遗漏关键决策信息，不是固定的五段式写作模板。Final Prompt 应把这些信息自然嵌入上下文，让读者可以直接复制，而不是看到一组教学栏目。
