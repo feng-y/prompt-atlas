@@ -32,7 +32,8 @@
 按用户要求或来源累计后运行。检查：
 
 - source 是否没有 downstream page；
-- Prompt Pair 是否缺 Current Prompt、Minimal Rewrite、证据状态或 Outcome；
+- Prompt Pair 是否缺 Current Prompt、Minimal Rewrite、证据状态、Outcome 或末尾的 Final Prompt；
+- Final Prompt 是否唯一、完整、可直接发送，且没有混入分析或备选方案；
 - principle / pattern 是否缺来源或重复验证；
 - 孤立页、陈旧链接、相互矛盾的综合；
 - 新来源是否改变旧结论。
@@ -42,6 +43,7 @@
 ## Write Rules
 
 - 原始 Prompt 与 source 不得被改写；改写稿另存。
+- Prompt Pair 的学习分析在前；唯一可发送的 `## Final Prompt` 必须是页面最后一节。
 - 使用标准 Markdown 与相对链接；不要加入 Obsidian 专属格式、RAG 或数据库。
 - 改变 schema、索引或原则时，检查其他 Agent 的读取路径。
 - ChatGPT 默认分析与建议；只有用户明确要求才写入。Codex / Claude Code 保留可审阅 Git 变更。
