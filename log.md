@@ -71,3 +71,11 @@
 - Kept the business navigation file as a dynamic target queue rather than a stable taxonomy or architecture source of truth.
 - Added explicit retain / narrow / rollback logic and negative-value checks for Harness changes.
 - Did not promote a new principle or Harness contract; runtime outcomes and cross-target evidence remain pending.
+
+## [2026-07-12] ingest | Human rewrite before repo compilation
+
+- Recorded the user's correction that Prompt Atlas should first reach the level of high-quality prompts a human can understand and learn to write.
+- Clarified that repo-aware compilation is low-value or risky when the compiler has not entered the actual repo and may misunderstand its architecture, Harness or verification surface.
+- Added a principle that external rewriting must not invent repo anchors, evidence routes or execution contracts.
+- Reframed the future roadmap as Prompt Alignment → Repo Grounding → Delegation Readiness → Control Prompt / Harness handoff.
+- Kept Prompt Foundation and current Prompt Pair structure unchanged.
