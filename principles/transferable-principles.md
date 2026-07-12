@@ -1,4 +1,4 @@
-# 可迁移原则 v0.2
+# 可迁移原则 v0.3
 
 这些原则来自现有 Prompt Pair 的共同模式。它们不是必须套用的模板，而是写完 Prompt 后用于自检的观察角度。
 
@@ -45,3 +45,11 @@
 ## 11. 组织思考，但隐藏模板
 
 `Goal / Decision Context / Control Boundary / Immediate Task / Observable Evidence` 用于检查 Prompt 是否遗漏关键决策信息，不是固定的五段式写作模板。Final Prompt 应把这些信息自然嵌入上下文，让读者可以直接复制，而不是看到一组教学栏目。
+
+## 12. 先达到人类可写的改写高度，再讨论 repo 编译
+
+Prompt Alignment 当前首先训练人能够自然表达清楚的目标、状态、边界、关注点和期望结果。AI 的改写应当仍然是人可以理解、模仿并逐步自行写出的 Prompt，而不是直接生成一份只有 Agent 才会写的完整控制合同。
+
+不要在尚未进入真实 repo 时，凭外部理解补写具体文件入口、架构事实、证据路线或执行机制。脱离 repo 现实的“编译”即使结构完整，也可能稳定地把任务引向错误问题空间。
+
+Repo-aware 编译只有在执行 Agent 实际读取当前 repo、确认已有 Harness 与验证能力之后才有价值。它属于后续执行环境中的 grounding，而不是当前 Prompt 表达训练的默认产物。
