@@ -16,10 +16,11 @@
 - [Five Prompt style baselines](sources/src-2026-07-11-five-prompt-style-baselines.md) — 五类学习方向与统一自然成稿规则
 - [Sol general work and delegation](sources/src-2026-07-11-sol-general-work-and-delegation.md) — Prompt 之后进入真实工作委托的方向性来源；外部产品与指标仍待核验
 - [Fable navigation, repair and value validation](sources/src-2026-07-11-fable-navigation-repair-validation.md) — 用真实业务目标探测 repo 导航、修复高价值 Harness 缺口并验证正负价值
+- [OpenAI GPT-5.6 Sol prompt guidance](sources/src-2026-07-16-openai-gpt-5-6-sol-prompt-guidance.md) — outcome-first、Task Contract、自治边界、工具路由、验证与停止条件的官方来源
 
 ## Phase 1 training
 
-- [Prompt Foundation Structure](guides/prompt-foundation-structure.md) — 用 Goal / Context / Boundary / Task / Evidence 检查内容，但不把它们机械写成成稿标题
+- [Prompt Foundation Structure](guides/prompt-foundation-structure.md) — 用 Outcome / Context / Evidence / Constraints / Task / Success / Stop 做内部 review，不机械暴露为成稿标题
 - [Five Prompt Style Baselines](guides/five-prompt-style-baselines.md) — Anthropic、Matt、Simon、Lilian、Boris 分别强化什么，以及如何共享同一自然成稿结构
 
 ## Prompt Pair cases
