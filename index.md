@@ -32,6 +32,7 @@
 - [Immediate Task: Request normalization](prompt-pairs/04-immediate-task/001-request-normalization-code-read.md)
 - [Success: Output contracts](prompt-pairs/05-success/001-output-contracts.md)
 - [Review: Challenge before recommendation](prompt-pairs/06-review/001-challenge-before-recommendation.md)
+- [Review: Architecture review vs code review](prompt-pairs/06-review/002-architecture-review-vs-code-review.md)
 - [Research: Conditional blindspot skill](prompt-pairs/09-research/001-conditional-blindspot-skill.md)
 - [Wayfinder: Unknown routing adapter](prompt-pairs/10-wayfinder/001-unknown-routing-adapter.md)
 - [Loop: FeatureTable bounded loop](prompt-pairs/11-loop/001-featuretable-bounded-loop.md)
