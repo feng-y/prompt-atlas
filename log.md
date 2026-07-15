@@ -79,3 +79,12 @@
 - Captured the key distinction between ordinary code review and architecture review: define the review object first, then judge against the original intent rather than only against the previous implementation or diff.
 - Required concrete code, consumer and verification evidence, plus explicit checks for moved complexity, shallow modules, public-surface leakage, locality and AI operability.
 - Did not promote a new principle yet; execution outcome and review verdict remain pending.
+
+## [2026-07-16] ingest | GPT-5.6 Sol task-contract guidance
+
+- Registered OpenAI's official GPT-5.6 Sol prompting guidance as a source record.
+- Reframed Prompt Atlas from Decision Context alone to Task Contract: outcome, context, evidence, constraints, immediate task, success criteria and stop rules.
+- Preserved the user's existing rule that Foundation dimensions are an internal review model, not mandatory visible headings.
+- Added contract-change analysis to the Prompt Pair template and strengthened lint for repetition, contradictions, unnecessary absolutes, scripted tool paths and unclear autonomy boundaries.
+- Did not promote the official recommendations directly into validated principles; representative Prompt Atlas tasks and eval traces are still required.
+- Review result: the migration changes project framing and authoring rules without turning the Foundation into a longer mandatory template.
