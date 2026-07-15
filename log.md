@@ -71,3 +71,11 @@
 - Kept the business navigation file as a dynamic target queue rather than a stable taxonomy or architecture source of truth.
 - Added explicit retain / narrow / rollback logic and negative-value checks for Harness changes.
 - Did not promote a new principle or Harness contract; runtime outcomes and cross-target evidence remain pending.
+
+## [2026-07-15] ingest | Architecture review vs code review
+
+- Added a real Review Prompt Pair for evaluating the completed `ModelCurator` refactor as a legacy-module architecture evolution result.
+- Classified it under Review with Architecture and Refactor as secondary tags.
+- Captured the key distinction between ordinary code review and architecture review: define the review object first, then judge against the original intent rather than only against the previous implementation or diff.
+- Required concrete code, consumer and verification evidence, plus explicit checks for moved complexity, shallow modules, public-surface leakage, locality and AI operability.
+- Did not promote a new principle yet; execution outcome and review verdict remain pending.
