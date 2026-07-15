@@ -29,9 +29,11 @@
 
 ## Prompt Pair final artifact
 
-分析部分用于学习；页面末尾的 `Final Prompt` 才是唯一可发送产物。使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.md) 检查 Goal / Why、Decision Context、Control Boundary、Immediate Task 与 Observable Evidence 是否在语义上足够清楚。
+分析部分用于学习；页面末尾的 `Final Prompt` 才是唯一可发送产物。使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.md) 检查 Goal / Outcome、Decision Context、Available Evidence、Constraints / Approval Boundary、Immediate Task、Success Criteria 与 Stop Rules 是否在语义上足够清楚。
 
-这些维度不是默认的成稿标题。Final Prompt 应是自然、连续、可直接复制的 Markdown。只有任务本身需要正式合同、多人交接或逐项返回时，才因为实际使用价值采用标题或列表。
+这些维度不是默认成稿标题。Final Prompt 应是自然、连续、可直接复制的 Markdown。先删除重复规则、无效过程说明和无关工具，再补最小的行为差异信息。只有任务本身需要正式合同、多人交接、结构化返回或 Harness 消费时，才因实际使用价值采用标题或列表。
+
+Prompt 是 Task Contract，不是 execution script。不要把模型已经能可靠完成的搜索、思考、工具选择和 review 步骤写死；但必须保留真实 invariant、权限边界、验证要求和停止条件。
 
 ## Lint
 
@@ -39,8 +41,11 @@
 
 - source 是否没有 downstream page；
 - Prompt Pair 是否缺 Current Prompt、Minimal Rewrite、证据状态、Outcome 或末尾的 Final Prompt；
-- Final Prompt 是否在内容上缺少目标、当前判断、必要边界、即时任务或可观察证据；
-- Final Prompt 是否机械泄漏 `Goal / Current Context / Boundary / Immediate Task / Success` 等教学栏目；
+- Final Prompt 是否缺目标、当前判断、可用证据、必要约束、即时任务、成功标准或停止规则；
+- 是否把 evidence 写成无条件固定读取顺序，或把 judgment rule 错写成 ALWAYS / NEVER；
+- 是否存在重复、矛盾、无效示例、无关工具或模型已可靠具备的过程脚手架；
+- 自治和审批边界是否清楚，是否从研究 / 设计静默越过到实现或外部写入；
+- Final Prompt 是否机械泄漏教学栏目；
 - Final Prompt 是否唯一、完整、可直接发送，且没有混入分析或备选方案；
 - principle / pattern 是否缺来源或重复验证；
 - 孤立页、陈旧链接、相互矛盾的综合；
@@ -53,6 +58,7 @@
 - 原始 Prompt 与 source 不得被改写；改写稿另存。
 - Prompt Pair 的学习分析在前；唯一可发送的 `## Final Prompt` 必须是页面最后一节。
 - Foundation 用于检查内容，不用于强制 Final Prompt 的可见段落结构。
+- 不把官方建议直接提升为已验证 principle；先在真实 Prompt 和代表性 eval 中验证。
 - 使用标准 Markdown 与相对链接；不要加入 Obsidian 专属格式、RAG 或数据库。
 - 改变 schema、索引或原则时，检查其他 Agent 的读取路径。
 - ChatGPT 默认分析与建议；只有用户明确要求才写入。Codex / Claude Code 保留可审阅 Git 变更。
