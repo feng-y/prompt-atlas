@@ -27,25 +27,32 @@
 
 先从 `index.md` 定位，再读相关 source 与 wiki 页面。输出时区分：source fact、current synthesis、inference、open question。查询结果只有在用户明确要求沉淀时才写回。
 
-## Prompt Pair final artifact
+## Prompt Pair as an evolution record
 
-分析部分用于学习；页面末尾的 `Final Prompt` 才是唯一可发送产物。使用 [Prompt Foundation Structure](guides/prompt-foundation-structure.md) 检查 Goal / Outcome、Decision Context、Available Evidence、Constraints / Approval Boundary、Immediate Task、Success Criteria 与 Stop Rules 是否在语义上足够清楚。
+Prompt Pair 记录一次真实 Prompt 的提升过程，不承担完整的 Prompt review 教程。
 
-这些维度不是默认成稿标题。Final Prompt 应是自然、连续、可直接复制的 Markdown。先删除重复规则、无效过程说明和无关工具，再补最小的行为差异信息。只有任务本身需要正式合同、多人交接、结构化返回或 Harness 消费时，才因实际使用价值采用标题或列表。
+页面只需要让读者看清：
 
-Prompt 是 Task Contract，不是 execution script。不要把模型已经能可靠完成的搜索、思考、工具选择和 review 步骤写死；但必须保留真实 invariant、权限边界、验证要求和停止条件。
+- 原 Prompt 是什么；
+- 最影响结果的问题与本轮关键改版是什么；
+- 最小改写如何体现单一变化；
+- 为什么这个变化更可能改善结果；
+- 最终可直接发送的 Prompt 是什么。
+
+复杂的 Foundation、Task Contract、自治、审批和工具路由判断放在 Guide 中，由作者在内部使用，不要求在每个 case 中逐项展开。已有 case 不需要仅为追求模板一致而批量重写；只有内容冗余或无法看清提升路径时再渐进收缩。
+
+页面末尾的 `Final Prompt` 是唯一可发送产物。它应是自然、连续、可直接复制的 Markdown，不机械泄漏教学栏目。
 
 ## Lint
 
 按用户要求或来源累计后运行。检查：
 
 - source 是否没有 downstream page；
-- Prompt Pair 是否缺 Current Prompt、Minimal Rewrite、证据状态、Outcome 或末尾的 Final Prompt；
-- Final Prompt 是否缺目标、当前判断、可用证据、必要约束、即时任务、成功标准或停止规则；
-- 是否把 evidence 写成无条件固定读取顺序，或把 judgment rule 错写成 ALWAYS / NEVER；
-- 是否存在重复、矛盾、无效示例、无关工具或模型已可靠具备的过程脚手架；
+- Prompt Pair 是否缺 Current Prompt、清楚的改版说明、Minimal Rewrite、证据状态、Outcome 或末尾的 Final Prompt；
+- case 是否为了展示方法而逐项复述 Foundation、Contract 或 Harness 分析，导致提升主线被淹没；
+- Final Prompt 是否缺真正会影响任务结果的目标、上下文、边界或完成标准；
+- 是否存在重复、矛盾、无效示例、无关工具或不必要的过程脚手架；
 - 自治和审批边界是否清楚，是否从研究 / 设计静默越过到实现或外部写入；
-- Final Prompt 是否机械泄漏教学栏目；
 - Final Prompt 是否唯一、完整、可直接发送，且没有混入分析或备选方案；
 - principle / pattern 是否缺来源或重复验证；
 - 孤立页、陈旧链接、相互矛盾的综合；
@@ -56,8 +63,10 @@ Prompt 是 Task Contract，不是 execution script。不要把模型已经能可
 ## Write Rules
 
 - 原始 Prompt 与 source 不得被改写；改写稿另存。
-- Prompt Pair 的学习分析在前；唯一可发送的 `## Final Prompt` 必须是页面最后一节。
-- Foundation 用于检查内容，不用于强制 Final Prompt 的可见段落结构。
+- Prompt Pair 的分析服务于展示提升过程，不追求覆盖所有 review 维度。
+- 唯一可发送的 `## Final Prompt` 必须是页面最后一节。
+- Foundation 用于内部检查，不用于强制 case 分析结构或 Final Prompt 的可见段落结构。
+- Guide 解释方法，case 展示改版；不要把 Guide 内容复制到每个 case。
 - 不把官方建议直接提升为已验证 principle；先在真实 Prompt 和代表性 eval 中验证。
 - 使用标准 Markdown 与相对链接；不要加入 Obsidian 专属格式、RAG 或数据库。
 - 改变 schema、索引或原则时，检查其他 Agent 的读取路径。

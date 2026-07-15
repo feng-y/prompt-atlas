@@ -88,3 +88,11 @@
 - Added contract-change analysis to the Prompt Pair template and strengthened lint for repetition, contradictions, unnecessary absolutes, scripted tool paths and unclear autonomy boundaries.
 - Did not promote the official recommendations directly into validated principles; representative Prompt Atlas tasks and eval traces are still required.
 - Review result: the migration changes project framing and authoring rules without turning the Foundation into a longer mandatory template.
+
+## [2026-07-16] schema | Prompt Pair as evolution record
+
+- Corrected the Prompt Pair role: it records a Prompt improvement or revision process rather than reproducing a full review framework in every case.
+- Simplified the default case path to Current Prompt → Improvement → Minimal Rewrite → Why It Is Better → Final Prompt.
+- Kept Foundation, Task Contract, autonomy and tool-routing analysis in Guide-level methods.
+- Added a progressive migration rule: existing cases are not batch-rewritten only for schema consistency; they are simplified when their content is materially revisited.
+- Review result: the template is lighter while preserving evidence, outcome tracking, transferable principles and the terminal Final Prompt contract.
