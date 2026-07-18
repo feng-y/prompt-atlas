@@ -17,6 +17,7 @@
 - [Sol general work and delegation](sources/src-2026-07-11-sol-general-work-and-delegation.md) — Prompt 之后进入真实工作委托的方向性来源；外部产品与指标仍待核验
 - [Fable navigation, repair and value validation](sources/src-2026-07-11-fable-navigation-repair-validation.md) — 用真实业务目标探测 repo 导航、修复高价值 Harness 缺口并验证正负价值
 - [OpenAI GPT-5.6 Sol prompt guidance](sources/src-2026-07-16-openai-gpt-5-6-sol-prompt-guidance.md) — outcome-first、Task Contract、自治边界、工具路由、验证与停止条件的官方来源
+- [Behavior-preserving refactor review Prompt 对照](sources/src-2026-07-18-behavior-preserving-refactor-review.md) — 结构迁移 Review 中如何显式化等价性判断、scope boundary 与最终 verdict
 
 ## Phase 1 training
 
@@ -34,6 +35,7 @@
 - [Success: Output contracts](prompt-pairs/05-success/001-output-contracts.md)
 - [Review: Challenge before recommendation](prompt-pairs/06-review/001-challenge-before-recommendation.md)
 - [Review: Architecture review vs code review](prompt-pairs/06-review/002-architecture-review-vs-code-review.md)
+- [Review: Behavior-preserving refactor](prompt-pairs/06-review/003-behavior-preserving-refactor-review.md)
 - [Research: Conditional blindspot skill](prompt-pairs/09-research/001-conditional-blindspot-skill.md)
 - [Wayfinder: Unknown routing adapter](prompt-pairs/10-wayfinder/001-unknown-routing-adapter.md)
 - [Loop: FeatureTable bounded loop](prompt-pairs/11-loop/001-featuretable-bounded-loop.md)
