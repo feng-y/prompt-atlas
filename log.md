@@ -96,3 +96,11 @@
 - Kept Foundation, Task Contract, autonomy and tool-routing analysis in Guide-level methods.
 - Added a progressive migration rule: existing cases are not batch-rewritten only for schema consistency; they are simplified when their content is materially revisited.
 - Review result: the template is lighter while preserving evidence, outcome tracking, transferable principles and the terminal Final Prompt contract.
+
+## [2026-07-18] ingest | Behavior-preserving refactor review
+
+- Added a real Review Prompt Pair for a structural migration that lifts galaxy request logic from Model-derived classes into the Model layer while preserving business behavior.
+- Captured the main Prompt weakness as an implicit acceptance model: “no logic drift” was stated, but the observable equivalence criteria used to judge drift were not.
+- Separated business semantic drift from acceptable observability differences in log / metrics / latency, and added explicit checks for migration completeness and scope creep.
+- Recorded the recurring expression risk of presenting a target state such as “all derived classes are migrated” as a known fact instead of something the Review must verify.
+- Kept the resulting principle as a candidate only; the Prompt still needs a real branch Review Outcome before broader promotion.
