@@ -18,6 +18,7 @@
 - [Fable navigation, repair and value validation](sources/src-2026-07-11-fable-navigation-repair-validation.md) — 用真实业务目标探测 repo 导航、修复高价值 Harness 缺口并验证正负价值
 - [OpenAI GPT-5.6 Sol prompt guidance](sources/src-2026-07-16-openai-gpt-5-6-sol-prompt-guidance.md) — outcome-first、Task Contract、自治边界、工具路由、验证与停止条件的官方来源
 - [Behavior-preserving refactor review Prompt 对照](sources/src-2026-07-18-behavior-preserving-refactor-review.md) — 结构迁移 Review 中如何显式化等价性判断、scope boundary 与最终 verdict
+- [最近三天：结构迁移 Review 与 Harness smoke test 经验](sources/src-2026-07-19-recent-harness-review-lessons.md) — semantic equivalence、fix/re-review loop、真实任务 smoke test、progression 与真实领域差异
 
 ## Phase 1 training
 
@@ -36,6 +37,7 @@
 - [Review: Challenge before recommendation](prompt-pairs/06-review/001-challenge-before-recommendation.md)
 - [Review: Architecture review vs code review](prompt-pairs/06-review/002-architecture-review-vs-code-review.md)
 - [Review: Behavior-preserving refactor](prompt-pairs/06-review/003-behavior-preserving-refactor-review.md)
+- [Review: Structural change review loop](prompt-pairs/06-review/004-structural-change-review-loop.md)
 - [Research: Conditional blindspot skill](prompt-pairs/09-research/001-conditional-blindspot-skill.md)
 - [Wayfinder: Unknown routing adapter](prompt-pairs/10-wayfinder/001-unknown-routing-adapter.md)
 - [Loop: FeatureTable bounded loop](prompt-pairs/11-loop/001-featuretable-bounded-loop.md)
@@ -43,6 +45,7 @@
 - [Loop: Business target navigation queue](prompt-pairs/11-loop/003-business-target-navigation-queue.md)
 - [Verification: Replay-observable slices](prompt-pairs/12-verification/001-replay-observable-slices.md)
 - [Verification: Harness change value and negative-regression validation](prompt-pairs/12-verification/002-harness-change-value-validation.md)
+- [Verification: Real-task Harness smoke test](prompt-pairs/12-verification/003-real-task-harness-smoke-test.md)
 
 ## Compiled knowledge
 
