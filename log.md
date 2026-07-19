@@ -104,3 +104,13 @@
 - Separated business semantic drift from acceptable observability differences in log / metrics / latency, and added explicit checks for migration completeness and scope creep.
 - Recorded the recurring expression risk of presenting a target state such as “all derived classes are migrated” as a known fact instead of something the Review must verify.
 - Kept the resulting principle as a candidate only; the Prompt still needs a real branch Review Outcome before broader promotion.
+
+## [2026-07-19] ingest | Structural review loop and real-task Harness smoke test
+
+- Registered recent DaVinci / Fable / Galaxy Prompt iterations as a source record without copying internal implementation details.
+- Added a Review Prompt Pair that orders structural-change review as Semantic Equivalence → Migration Completeness → Scope Integrity → Observability Impact → General Risk.
+- Added the rule that every Fix becomes new Diff and must re-enter the full Review contract; stop after a complete round with no new medium/high risks, while unverified areas remain explicit residual risks.
+- Added a Verification Prompt Pair for using a real complex task as a Fable / Harness smoke test without pre-scripting Wayfinder → spec → tickets → execution.
+- Recorded `Current State → Next Capability` as a candidate progression model and kept any future progression skill thin rather than making it a new workflow owner.
+- Recorded the Galaxy-derived distinction between removing accidental differences through abstraction and preserving real domain differences in repo knowledge.
+- Did not promote these candidate rules into global principles or Harness contracts yet; they require additional real-task Outcomes and cross-module evidence.
