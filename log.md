@@ -114,3 +114,12 @@
 - Recorded `Current State → Next Capability` as a candidate progression model and kept any future progression skill thin rather than making it a new workflow owner.
 - Recorded the Galaxy-derived distinction between removing accidental differences through abstraction and preserving real domain differences in repo knowledge.
 - Did not promote these candidate rules into global principles or Harness contracts yet; they require additional real-task Outcomes and cross-module evidence.
+
+## [2026-07-23] ingest | Recent prompt contract lessons
+
+- Reviewed the latest Mycroft / `ModelInputConfig` / inference / Harness-ticket conversations and selected only three non-duplicate learning cases for permanent capture.
+- Added a usage-first architecture-analysis Prompt Pair: define the target responsibility and evidence bar, then let repo usage/lifecycle reveal whether fields should be removed, migrated, aggregated or kept separate; do not turn the field list into a scripted investigation.
+- Added a new-path / stable-path Review Prompt Pair for inference integration: separately prove inference correctness and preservation of existing merge semantics, while distinguishing observability drift, scope creep and unresolved unknowns.
+- Added a dependency-driven ticket progression Prompt Pair: `frontier → evidence-backed close → recompute frontier`, with human intervention reserved for genuine policy/ownership blockers rather than routine stage advancement.
+- Explicitly did not promote `Outcome / Context / Constraints / Focus / Output` as a mandatory visible Final Prompt template. It remains an internal shaping lens consistent with the existing Foundation rule; Final Prompts should expose only structure that materially improves execution.
+- No global principle or pattern was promoted yet. All three cases still require real execution outcomes or cross-case validation before promotion.
