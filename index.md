@@ -19,6 +19,7 @@
 - [OpenAI GPT-5.6 Sol prompt guidance](sources/src-2026-07-16-openai-gpt-5-6-sol-prompt-guidance.md) — outcome-first、Task Contract、自治边界、工具路由、验证与停止条件的官方来源
 - [Behavior-preserving refactor review Prompt 对照](sources/src-2026-07-18-behavior-preserving-refactor-review.md) — 结构迁移 Review 中如何显式化等价性判断、scope boundary 与最终 verdict
 - [最近三天：结构迁移 Review 与 Harness smoke test 经验](sources/src-2026-07-19-recent-harness-review-lessons.md) — semantic equivalence、fix/re-review loop、真实任务 smoke test、progression 与真实领域差异
+- [最近工程 Prompt：自治空间、语义漂移与连续 ticket loop](sources/src-2026-07-23-recent-prompt-contract-lessons.md) — usage-first 结构判断、new-path / stable-path 双面 Review 与依赖驱动 progression 的近期纠偏证据
 
 ## Phase 1 training
 
@@ -31,6 +32,7 @@
 - [Task Context: Harness three-layer audit](prompt-pairs/01-task-context/002-harness-three-layer-audit.md)
 - [Task Context: Harness workflow compatibility cleanup](prompt-pairs/01-task-context/003-harness-workflow-compatibility-cleanup.md)
 - [Task Context: Iteration Reason vs History — replay target selection gap](prompt-pairs/01-task-context/004-iteration-reason-vs-history.md)
+- [Task Context: Slot config usage-first convergence](prompt-pairs/01-task-context/005-slot-config-usage-first-convergence.md)
 - [Boundary: Wayfinder without forking](prompt-pairs/03-boundary/001-wayfinder-without-forking.md)
 - [Immediate Task: Request normalization](prompt-pairs/04-immediate-task/001-request-normalization-code-read.md)
 - [Success: Output contracts](prompt-pairs/05-success/001-output-contracts.md)
@@ -38,11 +40,13 @@
 - [Review: Architecture review vs code review](prompt-pairs/06-review/002-architecture-review-vs-code-review.md)
 - [Review: Behavior-preserving refactor](prompt-pairs/06-review/003-behavior-preserving-refactor-review.md)
 - [Review: Structural change review loop](prompt-pairs/06-review/004-structural-change-review-loop.md)
+- [Review: Inference implementation and merge semantic drift](prompt-pairs/06-review/005-inference-merge-semantic-drift-review.md)
 - [Research: Conditional blindspot skill](prompt-pairs/09-research/001-conditional-blindspot-skill.md)
 - [Wayfinder: Unknown routing adapter](prompt-pairs/10-wayfinder/001-unknown-routing-adapter.md)
 - [Loop: FeatureTable bounded loop](prompt-pairs/11-loop/001-featuretable-bounded-loop.md)
 - [Loop: Single-target navigation and high-value repair](prompt-pairs/11-loop/002-single-target-navigation-repair.md)
 - [Loop: Business target navigation queue](prompt-pairs/11-loop/003-business-target-navigation-queue.md)
+- [Loop: Ticket frontier continuous progression](prompt-pairs/11-loop/004-ticket-frontier-continuous-loop.md)
 - [Verification: Replay-observable slices](prompt-pairs/12-verification/001-replay-observable-slices.md)
 - [Verification: Harness change value and negative-regression validation](prompt-pairs/12-verification/002-harness-change-value-validation.md)
 - [Verification: Real-task Harness smoke test](prompt-pairs/12-verification/003-real-task-harness-smoke-test.md)
